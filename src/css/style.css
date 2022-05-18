@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 62.5%;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECECEC;
+}
+
+.container{
+    max-width: 1440px;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+.header{
+    grid-area: header;
+    padding: 25px;
+}
+
+.main{
+    /* background-color: violet; */
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main .conteudo{
+    padding: 25px;
+}
+
+.main .conteudo p{
+    margin-top: 20px;
+    line-height: 25px;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.main .imagem{
+    padding: 25px;
+}
+
+.main .imagem img{
+    width: 100%;
+}
+
+.main .conteudo h1{
+    margin-top: 50px;
+    line-height: 45px;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+.main .conteudo span{
+    display: flex;
+}
+
+.main .conteudo .botao{
+    padding: 13px 50px;
+    border-radius: 30px;
+    margin-top: 20px;
+    border: 1px solid white;
+    transition: 0.3s;
+    color: hsl(257, 40%, 49%);
+}
+
+.main .conteudo .botao:hover{
+    color: white;
+    background-color: #934EC9;
+}
+
+
+.footer{
+    grid-area: footer;
+}
+
+.footer a{
+    display: flex;
+    justify-content: right;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    margin-right: 200px;
+}
+.footer a i{
+    padding: 7px;
+    color: white;
+    transition: 0.3s;
+}
+.footer a i:hover{
+    color: royalblue;
+}
+
+
+@media (max-width:700px){
+    .main{
+        display: block;
+    }
+    .conteudo{
+        text-align: center;
+    }
+    h1,span{
+        text-align: center;
+        justify-content: center;
+    }
+   .footer a{
+       justify-content: center;
+       align-items: center;
+       margin: 0;
+       padding: 0;
+   }
+}
+
+
+@media (max-width:375px){
+    .main{
+        display: block;
+    }
+    .conteudo{
+        text-align: center;
+    }
+    h1,span{
+        text-align: center;
+        justify-content: center;
+    }
+   .footer a{
+       justify-content: center;
+       align-items: center;
+       margin: 0;
+       padding: 0;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
